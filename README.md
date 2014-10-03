@@ -9,5 +9,5 @@ jdbc + sqllite
 
 Piotr Filek:		Dearn
 Marin Nowak:		marsmall
-Piotr Zyszczak:		
-Rafał Markiewicz:
+Piotr Zyszczak:		nervar66
+Rafał Markiewicz:	raficda
