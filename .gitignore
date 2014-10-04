@@ -2,3 +2,5 @@
 *.jar
 *.war
 *.ear
+/Projekt/nbproject/private/
+/Projekt/build/
