@@ -155,7 +155,7 @@ public class jdbc_connection extends javax.swing.JFrame {
 "`grupa`\n" +
 ")\n" +
 "VALUES (\n" +
-"'sdfsf',  'sfdfsdfs',  'sfsdfsdd'\n" +
+"'"+v1+"',  '"+v2+"',  '"+v3+"'\n" +
 ");";
             st.executeUpdate(querry1);
         }catch(Exception e){
