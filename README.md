@@ -12,3 +12,13 @@ Piotr Filek:		Dearn
 Marin Nowak:		marsmall  
 Piotr Zyszczak:		nervar66  
 Rafał Markiewicz:	raficda  
+
+
+projektposrednik - finzymar / finzymar14
+projektposrednik.esy.es
+
+Baza danych:
+nazwa bazy danych: u668870087_posr
+nazwa uzytkownika: u668870087_finzy
+haslo: finzymar14
+host mysql: mysql.hostinger.pl
