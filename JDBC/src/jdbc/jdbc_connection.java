@@ -149,7 +149,14 @@ public class jdbc_connection extends javax.swing.JFrame {
             Class.forName("java.sql.Driver");
             Connection conn=DriverManager.getConnection("jdbc:mysql://sql3.freemysqlhosting.net/sql354277","sql354277","mJ9%aV2%");
             Statement st=conn.createStatement();
-            String querry1="INSERT INTO  `sql354277`.`testowa` (`imie` ,`nazwisko` ,`grupa`) VALUES ("+v1+",  "+v2+",  "+v3+");";
+            String querry1="INSERT INTO  `sql354277`.`testowa` (\n" +
+"`imie` ,\n" +
+"`nazwisko` ,\n" +
+"`grupa`\n" +
+")\n" +
+"VALUES (\n" +
+"'sdfsf',  'sfdfsdfs',  'sfsdfsdd'\n" +
+");";
             st.executeUpdate(querry1);
         }catch(Exception e){
             jTextField1.setText(e.getMessage());
