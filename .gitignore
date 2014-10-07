@@ -1,9 +1,7 @@
 *.class
 *.war
 *.ear
-/Projekt/nbproject/private/
-/Projekt/build/
-/ProjektC/nbproject/private/
-/JDBC/nbproject/private/
-/JDBC/build/
-/JDBC/dist/JDBC.jar
+*.html
+nbproject/private/
+build/
+dist/JDBC.jar
