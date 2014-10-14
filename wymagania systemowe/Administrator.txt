@@ -1,0 +1,11 @@
+1. Logowanie
+2. Dodawanie u¿ytkowników
+3. usówanie u¿ytkowników
+4. Edycja u¿ytkowników
+5. Dodawanie ofert
+6. Usówanie ofert
+7. Edycja danych w bazie
+8. Usuwanie ofert (np. Niezgodnych z regulaminem)
+9. Lista ofert niezgodnych z regulaminem (zg³oszonymi przez u¿ytkowników)
+10. Blokowanie i odblokowywanie u¿ytkowników
+11. Rozwi¹zywanie konfliktów zwi¹zanych z systemem oceniania.
