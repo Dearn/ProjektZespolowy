@@ -1,0 +1,41 @@
+Baza danych.
+
+
+Tabela 1: Lista przedmiotow do pozyczenia
+* ID Przedmiotu (INT)
+* Nazwa (string)
+* Typ - 0 niekatywne, 1 aktywne (BOOLEAN)
+* Minimalny okres wypożczeni: 0 - dzien, 1 - tydzien, 2 - miesiac
+* Opis przedmiotu (string)
+* Cena (float)
+* Od kiedy (Date type)
+* Do kiedy (Date type)
+* Dostepne dni (bitmapa) (string)
+* Minimalna ocena pozyczajacego
+# * Nazw. uzytkownika. wypozyczajacego (string)
+* UID wypozyczajacego (INT)
+
+
+
+Tabela 2: Uzytkownicy
+* Imie
+* Nazwisko
+* Nazwa uzytkownika
+* Hasło
+* UID*
+* E-mail
+* Nr kontaktowy
+* Ocena (karma)
+* Status (konto aktywne/zbanowane)
+
+Tabela 3:  Lista przedmiotow wypozyczonych
+* ID przedmiotu -> key z tab 1
+* Od kiedy (date type)
+* Do kiedy (date type)
+* UID pozyczajacego
+* UID wypozyczajacego
+* Ocena od pozyczajacego
+* Status - obecnie pozyczone / pozyczone zakonczone
+
+
+
