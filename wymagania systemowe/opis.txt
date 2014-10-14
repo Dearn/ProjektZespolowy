@@ -1,0 +1,5 @@
+System jest aplikacj¹ internetow¹, która umo¿liwia u¿ytkownikom po¿yczanie przedmiotów. U¿ytkownik ma mo¿liwoœæ umieszczenia przedmiotu który chce wypo¿yczyæ w serwisie, po uprzednim utworzeniu konta/zalogowaniu siê na istniej¹ce konto.
+Umieszaj¹c go w serwisie wybiera odpowiedni¹ kategoriê produktu, podaje nazwê, krótki opis, cenê, oraz okres terminu wypo¿yczenia który go interesuje.
+U¿ytkownik ma tak¿e mo¿liwoœæ przeszukania serwisu korzystaj¹c z listy kategorii, b¹dŸ wyszukuj¹c po nazwie produktu oraz po mieœcie wypo¿yczaj¹cego. Jeœli ma konto w serwisie, ma mo¿liwoœæ po¿yczenia przedmiotu. Po dokonaniu wyboru najemca potwierdza po¿yczenie produktu.
+Zarówno przy po¿yczeniu jak i oddaniu przedmiotu przez obie strony wype³niany jest protokó³, oraz istnieje mo¿liwoœæ wystawienia oceny oraz komentarza dotycz¹cych transkakcji.
+U¿ytkownik ma dostêp do listy swoich wypo¿yczonych, po¿yczonych przedmiotów. Ocena oraz komentarze s¹ widoczne dla wszystkich.
