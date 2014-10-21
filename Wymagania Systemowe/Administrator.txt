@@ -1,6 +1,6 @@
 1. Logowanie
 2. Dodawanie u¿ytkowników
-3. usówanie u¿ytkowników
+3. usuwanie u¿ytkowników
 4. Edycja u¿ytkowników
 5. Dodawanie ofert
 6. Usówanie ofert
