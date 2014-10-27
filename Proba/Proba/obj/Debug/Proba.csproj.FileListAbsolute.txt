@@ -1,0 +1,6 @@
+C:\Users\Samael\Desktop\Proba\Proba\bin\Proba.dll.config
+C:\Users\Samael\Desktop\Proba\Proba\bin\Proba.dll
+C:\Users\Samael\Desktop\Proba\Proba\bin\Proba.pdb
+C:\Users\Samael\Desktop\Proba\Proba\obj\Debug\Proba.csprojResolveAssemblyReference.cache
+C:\Users\Samael\Desktop\Proba\Proba\obj\Debug\Proba.dll
+C:\Users\Samael\Desktop\Proba\Proba\obj\Debug\Proba.pdb
