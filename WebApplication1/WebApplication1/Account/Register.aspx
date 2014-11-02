@@ -1,75 +1,82 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Register.aspx.cs" Inherits="WebApplication1.Account.Register" %>
-
-<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="WebApplication1.Account.Register" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <style type="text/css">
+        .style1
+        {
+            color: #FF0000;
+        }
+    </style>
 </asp:Content>
-<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
-    <asp:CreateUserWizard ID="RegisterUser" runat="server" EnableViewState="false" OnCreatedUser="RegisterUser_CreatedUser">
-        <LayoutTemplate>
-            <asp:PlaceHolder ID="wizardStepPlaceholder" runat="server"></asp:PlaceHolder>
-            <asp:PlaceHolder ID="navigationPlaceholder" runat="server"></asp:PlaceHolder>
-        </LayoutTemplate>
-        <WizardSteps>
-            <asp:CreateUserWizardStep ID="RegisterUserWizardStep" runat="server">
-                <ContentTemplate>
-                    <h2>
-                        Create a New Account
-                    </h2>
-                    <p>
-                        Use the form below to create a new account.
-                    </p>
-                    <p>
-                        Passwords are required to be a minimum of <%= Membership.MinRequiredPasswordLength %> characters in length.
-                    </p>
-                    <span class="failureNotification">
-                        <asp:Literal ID="ErrorMessage" runat="server"></asp:Literal>
-                    </span>
-                    <asp:ValidationSummary ID="RegisterUserValidationSummary" runat="server" CssClass="failureNotification" 
-                         ValidationGroup="RegisterUserValidationGroup"/>
-                    <div class="accountInfo">
-                        <fieldset class="register">
-                            <legend>Account Information</legend>
-                            <p>
-                                <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">User Name:</asp:Label>
-                                <asp:TextBox ID="UserName" runat="server" CssClass="textEntry"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" 
-                                     CssClass="failureNotification" ErrorMessage="User Name is required." ToolTip="User Name is required." 
-                                     ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
-                            </p>
-                            <p>
-                                <asp:Label ID="EmailLabel" runat="server" AssociatedControlID="Email">E-mail:</asp:Label>
-                                <asp:TextBox ID="Email" runat="server" CssClass="textEntry"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email" 
-                                     CssClass="failureNotification" ErrorMessage="E-mail is required." ToolTip="E-mail is required." 
-                                     ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
-                            </p>
-                            <p>
-                                <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label>
-                                <asp:TextBox ID="Password" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" 
-                                     CssClass="failureNotification" ErrorMessage="Password is required." ToolTip="Password is required." 
-                                     ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
-                            </p>
-                            <p>
-                                <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Confirm Password:</asp:Label>
-                                <asp:TextBox ID="ConfirmPassword" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
-                                <asp:RequiredFieldValidator ControlToValidate="ConfirmPassword" CssClass="failureNotification" Display="Dynamic" 
-                                     ErrorMessage="Confirm Password is required." ID="ConfirmPasswordRequired" runat="server" 
-                                     ToolTip="Confirm Password is required." ValidationGroup="RegisterUserValidationGroup">*</asp:RequiredFieldValidator>
-                                <asp:CompareValidator ID="PasswordCompare" runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword" 
-                                     CssClass="failureNotification" Display="Dynamic" ErrorMessage="The Password and Confirmation Password must match."
-                                     ValidationGroup="RegisterUserValidationGroup">*</asp:CompareValidator>
-                            </p>
-                        </fieldset>
-                        <p class="submitButton">
-                            <asp:Button ID="CreateUserButton" runat="server" CommandName="MoveNext" Text="Create User" 
-                                 ValidationGroup="RegisterUserValidationGroup"/>
-                        </p>
-                    </div>
-                </ContentTemplate>
-                <CustomNavigationTemplate>
-                </CustomNavigationTemplate>
-            </asp:CreateUserWizardStep>
-        </WizardSteps>
-    </asp:CreateUserWizard>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<table>
+<tr>
+<td><asp:Label ID="Label1" runat="server" Text="Imię:"></asp:Label></td>	<td><asp:TextBox ID="TextBox_Imie" runat="server"></asp:TextBox></td>
+<td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+        ErrorMessage="Wpisz imie!" ControlToValidate="TextBox_Imie" 
+        CssClass="style1"></asp:RequiredFieldValidator>
+    </td>
+</tr>
+<tr>
+<td><asp:Label ID="Label2" runat="server" Text="Nazwisko:"></asp:Label></td>	<td><asp:TextBox ID="TextBox_Nazwisko" runat="server"></asp:TextBox></td>
+<td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+        ErrorMessage="Wpisz nazwisko!" ControlToValidate="TextBox_Nazwisko" 
+        CssClass="style1"></asp:RequiredFieldValidator>
+    </td>
+</tr>
+<tr>
+<td><asp:Label ID="Label3" runat="server" Text="Email:"></asp:Label></td>	<td><asp:TextBox ID="TextBox_Email" runat="server"></asp:TextBox></td>
+<td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+        ErrorMessage="Wpisz email!" ControlToValidate="TextBox_Email" 
+        CssClass="style1"></asp:RequiredFieldValidator><br/>
+    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+        ErrorMessage="Niepoprawny email!" ControlToValidate="TextBox_Email" 
+        style="color: #FF0000" 
+        ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+    </td>
+</tr>
+<tr>
+<td><asp:Label ID="Label4" runat="server" Text="Telefon:"></asp:Label></td>	<td><asp:TextBox ID="TextBox_Talefon" runat="server"></asp:TextBox></td>
+<td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+        ErrorMessage="Wpisz telefon!" ControlToValidate="TextBox_Talefon" 
+        CssClass="style1"></asp:RequiredFieldValidator>
+    </td>
+</tr>
+<tr>
+<td><asp:Label ID="Label7" runat="server" Text="Nick:"></asp:Label></td>	<td><asp:TextBox ID="TextBox_Nick" runat="server"></asp:TextBox></td>
+<td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
+        ErrorMessage="Wpisz nick!" ControlToValidate="TextBox_Nick" 
+        CssClass="style1"></asp:RequiredFieldValidator>
+    </td>
+</tr>
+<tr>
+<td><asp:Label ID="Label5" runat="server" Text="Hasło:"></asp:Label></td>	<td>
+    <asp:TextBox ID="Haslo1_textfield" runat="server" TextMode="Password"></asp:TextBox>
+    </td>
+<td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+        ErrorMessage="Wpisz haslo!" ControlToValidate="Haslo1_textfield" 
+        style="color: #FF0000"></asp:RequiredFieldValidator>
+    </td>
+</tr>
+<tr>
+<td><asp:Label ID="Label6" runat="server" Text="Powtórz hasło:"></asp:Label></td>	<td>
+    <asp:TextBox ID="Haslo2_textfield" runat="server" TextMode="Password"></asp:TextBox>
+    </td>
+    <td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
+        ErrorMessage="Wpisz haslo!" ControlToValidate="Haslo2_textfield" 
+        CssClass="style1"></asp:RequiredFieldValidator><br/>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" 
+            ControlToCompare="Haslo1_textfield" ControlToValidate="Haslo2_textfield" 
+            ErrorMessage="Wpisz to samo co u góry!" style="color: #FF0000"></asp:CompareValidator>
+    </td>
+</tr>
+</table>
+    <asp:Button ID="Rejestruj" runat="server" Text="Zarejestruj" 
+        onclick="Rejestruj_Click" />
 </asp:Content>
