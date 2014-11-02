@@ -13,6 +13,15 @@ namespace WebApplication1.Account {
     public partial class Register {
         
         /// <summary>
+        /// Warningi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Warningi;
+        
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -112,13 +121,13 @@ namespace WebApplication1.Account {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// TextBox_Talefon control.
+        /// TextBox_Telefon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_Talefon;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Telefon;
         
         /// <summary>
         /// RequiredFieldValidator4 control.

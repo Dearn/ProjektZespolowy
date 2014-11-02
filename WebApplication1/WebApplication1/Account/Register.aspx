@@ -8,6 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Label ID="Warningi" runat="server" Text=""></asp:Label>
 <table>
 <tr>
 <td><asp:Label ID="Label1" runat="server" Text="Imię:"></asp:Label></td>	<td><asp:TextBox ID="TextBox_Imie" runat="server"></asp:TextBox></td>
@@ -38,10 +39,11 @@
     </td>
 </tr>
 <tr>
-<td><asp:Label ID="Label4" runat="server" Text="Telefon:"></asp:Label></td>	<td><asp:TextBox ID="TextBox_Talefon" runat="server"></asp:TextBox></td>
+<td><asp:Label ID="Label4" runat="server" Text="Telefon:"></asp:Label></td>	<td>
+    <asp:TextBox ID="TextBox_Telefon" runat="server"></asp:TextBox></td>
 <td>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
-        ErrorMessage="Wpisz telefon!" ControlToValidate="TextBox_Talefon" 
+        ErrorMessage="Wpisz telefon!" ControlToValidate="TextBox_Telefon" 
         CssClass="style1"></asp:RequiredFieldValidator>
     </td>
 </tr>
