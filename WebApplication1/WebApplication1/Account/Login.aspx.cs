@@ -5,19 +5,22 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace WebApplication1.Account
 {
     public partial class Login : System.Web.UI.Page
     {
+        string connStr;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+     
         }
 
         protected void Zaloguj_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=.\\JAJA;AttachDbFilename=C:\\Users\\Samael\\Desktop\\ProjektZespolowy\\WebApplication1\\WebApplication1\\App_Data\\Database1.mdf;Integrated Security=True;User Instance=True;");
+            connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connStr);
             conn.Open();
             string checkuser = "select count(*) from Uzytkownicy where imie='" + TextBox_login + "'";
             SqlCommand com = new SqlCommand(checkuser, conn);
