@@ -38,7 +38,7 @@ namespace WebApplication1.Account
                     {
                         Session["New"] = TextBox_login.Text;
                         Warningi.Text = "Hasło prawidłowe!";
-                        //Response.Redirect("StronaUzytkownika.aspx");
+                        Server.Transfer("StronaUzytkownika.aspx",true);
                     }
                     else
                     {

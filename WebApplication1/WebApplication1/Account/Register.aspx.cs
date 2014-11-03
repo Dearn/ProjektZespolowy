@@ -54,7 +54,7 @@ namespace WebApplication1.Account
                     Warningi.Text = "Error: " + ex.ToString();
                 }
             }
-            if(temp<=1)
+            if(temp>=1)
             {
                 Warningi.Text="Użytkownik istnieje !";
             }

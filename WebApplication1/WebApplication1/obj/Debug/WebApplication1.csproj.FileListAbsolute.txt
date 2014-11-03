@@ -2,7 +2,11 @@ C:\Users\Samael\Desktop\ProjektZespolowy\WebApplication1\WebApplication1\bin\Web
 C:\Users\Samael\Desktop\ProjektZespolowy\WebApplication1\WebApplication1\bin\WebApplication1.pdb
 C:\Users\Samael\Desktop\ProjektZespolowy\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Samael\Desktop\ProjektZespolowy\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+<<<<<<< HEAD
+C:\Users\Samael\Desktop\ProjektZespolowy\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+=======
 D:\GIT\ProjektZespolowy\WebApplication1\WebApplication1\bin\WebApplication1.dll
 D:\GIT\ProjektZespolowy\WebApplication1\WebApplication1\bin\WebApplication1.pdb
 D:\GIT\ProjektZespolowy\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 D:\GIT\ProjektZespolowy\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+>>>>>>> e77d1629f6a74cda3aad700c1e44d500ec4cef1f
