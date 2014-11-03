@@ -7,3 +7,4 @@ build/
 dist/JDBC.jar
 /WebApp/nbproject/private/
 *.cache
+WebApplication1/WebApplication1/Web.config
