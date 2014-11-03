@@ -16,7 +16,7 @@ namespace WebApplication1.Account
         {
      
         }
-
+        
         protected void Zaloguj_Click(object sender, EventArgs e)
         {
             connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;

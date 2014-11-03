@@ -6,3 +6,4 @@ nbproject/private/
 build/
 dist/JDBC.jar
 /WebApp/nbproject/private/
+*.cache
