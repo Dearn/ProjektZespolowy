@@ -19,20 +19,21 @@ namespace WebApplication1.Account
         {
             SqlConnection conn = new SqlConnection("Data Source=.\\JAJA;AttachDbFilename=C:\\Users\\Samael\\Desktop\\ProjektZespolowy\\WebApplication1\\WebApplication1\\App_Data\\Database1.mdf;Integrated Security=True;User Instance=True;");
             conn.Open();
-            string checkuser = "select count(*) from Uzytkownicy where imie='" + TextBox_login + "'";
+            string checkuser = "SELECT count(*) FROM Uzytkownicy WHERE Nick='" + TextBox_login.Text + "'";
             SqlCommand com = new SqlCommand(checkuser, conn);
             int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
             conn.Close();
             if (temp == 1)
             {
                 conn.Open();
-                string sprawdzanieh = "select Pass from Uzytkownicy where Nick='" + TextBox_login + "'";
+                string sprawdzanieh = "SELECT Pass FROM Uzytkownicy WHERE Nick='" + TextBox_login.Text + "'";
                 SqlCommand passchecking = new SqlCommand(sprawdzanieh, conn);
-                string password = passchecking.ExecuteScalar().ToString().Replace(" ",""); ;
+                string password = passchecking.ExecuteScalar().ToString();
                 if (password == TextBox_password.Text)
                 {
                     Session["New"] = TextBox_login.Text;
                     Warningi.Text = "Hasło prawidłowe!";
+                    //Response.Redirect("StronaUzytkownika.aspx");
                 }
                 else
                 {
